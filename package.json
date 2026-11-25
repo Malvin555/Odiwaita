@@ -1,0 +1,13 @@
+{
+  "name": "obsiwaita",
+  "version": "1.0.0",
+  "description": "GTK4 / libadwaita theme for Obsidian",
+  "type": "module",
+  "private": true,
+  "author": "malvin555",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch"
+  },
+  "devDependencies": { "postcss": "^8.4.47" }
+}

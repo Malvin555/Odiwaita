@@ -1,0 +1,16 @@
+.menu-item {
+  min-height: 32px;
+  padding: 6px 10px;
+  gap: 8px;
+}
+.menu-separator { margin: 6px calc(var(--menu-padding) * -1); }
+
+.suggestion-container {
+  border: none;
+  border-radius: var(--menu-radius);
+  box-shadow: var(--adw-popover-shadow);
+}
+.suggestion-item.is-selected { background-color: var(--adw-selected-bg); }
+
+.popover.hover-popover { box-shadow: var(--adw-popover-shadow); }
+.popover.hover-popover:not(.is-editing) { border-color: transparent; }

@@ -1,0 +1,6 @@
+.kanban-plugin__lane { border-radius: 12px; background-color: var(--adw-sidebar-bg-color); border: none; }
+.kanban-plugin__item { border-radius: 10px; border: none; box-shadow: 0 0 0 1px var(--adw-border-color), var(--shadow-s); }
+.tasks-list-text, .plugin-tasks-query-result .task-list-item { border-radius: 6px; }
+#calendar-container .day, #calendar-container .week-num { border-radius: 8px; }
+#calendar-container .day.today { color: var(--adw-accent-color); font-weight: 700; }
+#calendar-container .day.active { background-color: var(--adw-accent-bg-color); color: var(--adw-accent-fg-color); }

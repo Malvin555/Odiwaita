@@ -1,0 +1,37 @@
+/* Layout helpers driven by the `cssclasses` property */
+.home, .section { --file-line-width: 980px; }
+.home .metadata-container, .section .metadata-container { display: none; }
+.home .inline-title, .section .inline-title { font-size: 2.3em; }
+.home h2, .section h2 { margin-top: 1.6em; }
+
+/* launcher tiles: a callout holding a table */
+.callout[data-callout="launcher"] { background: transparent; padding: 0; margin: 1em 0; }
+.callout[data-callout="launcher"] > .callout-title { display: none; }
+.callout[data-callout="launcher"] > .callout-content { padding: 0; margin: 0; }
+.callout[data-callout="launcher"] table {
+  width: 100%; table-layout: fixed; border: none; border-radius: 0;
+  border-collapse: separate; border-spacing: 10px 0; margin: 0 0 12px -10px; overflow: visible;
+}
+.callout[data-callout="launcher"] th,
+.callout[data-callout="launcher"] td {
+  border: none; background: color-mix(in srgb, var(--text-normal) 6%, transparent);
+  text-align: left; vertical-align: top;
+}
+.callout[data-callout="launcher"] th { border-radius: 14px 14px 0 0; padding: 16px 16px 2px; font-size: 1.1em; }
+.callout[data-callout="launcher"] td { border-radius: 0 0 14px 14px; padding: 0 16px 16px; color: var(--text-muted); font-size: 0.9em; }
+.callout[data-callout="launcher"] th a { color: var(--text-accent); font-weight: 700; }
+
+/* custom callouts */
+.callout[data-callout="reminder"] { --callout-color: var(--color-orange-rgb); --callout-icon: lucide-bell; }
+.callout[data-callout="idea"]     { --callout-color: var(--color-yellow-rgb); --callout-icon: lucide-lightbulb; }
+.callout[data-callout="goal"]     { --callout-color: var(--color-green-rgb);  --callout-icon: lucide-target; }
+.callout[data-callout="secure"]   { --callout-color: var(--color-purple-rgb); --callout-icon: lucide-lock; }
+.callout[data-callout="habit"]    { --callout-color: var(--color-cyan-rgb);   --callout-icon: lucide-repeat; }
+.callout[data-callout="important"]{ --callout-color: var(--color-red-rgb);    --callout-icon: lucide-alert-circle; }
+
+/* journal & private pages */
+.journal { --file-line-width: 720px; }
+.private .inline-title::before {
+  content: ""; display: inline-block; width: 0.7em; height: 0.7em; margin-right: 0.35em;
+  border-radius: 50%; background: var(--color-yellow);
+}

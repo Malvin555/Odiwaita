@@ -1,0 +1,16 @@
+.modal-container .modal-bg { background-color: rgb(0 0 0 / 40%); opacity: 1; }
+.modal-title { text-align: center; font-weight: 800; font-size: 1.15em; }
+.modal-content { margin-top: 12px; }
+.modal-button-container { justify-content: flex-end; gap: 8px; }
+
+.prompt { border-radius: var(--modal-radius); }
+input.prompt-input { border-bottom-color: var(--adw-border-color); }
+.prompt-instructions { border-top: 1px solid var(--adw-border-color); }
+
+.tooltip {
+  border-radius: 6px;
+  box-shadow: none;
+  background-color: var(--adw-osd-bg);
+  color: rgb(255 255 255 / 90%);
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+%colors% {
+  --titlebar-text-color: color-mix(in srgb, var(--adw-headerbar-fg-color) 55%, transparent);
+  --icon-color: var(--titlebar-text-color);
+  --icon-color-hover: var(--adw-headerbar-fg-color);
+  --icon-color-focused: var(--titlebar-text-color);
+  --tab-text-color: var(--titlebar-text-color);
+  --tab-text-color-focused: var(--titlebar-text-color);
+  --tab-text-color-focused-active-current: var(--titlebar-text-color);
+  --titlebar-background: var(--adw-headerbar-backdrop-color);
+  --titlebar-background-focused: var(--adw-headerbar-bg-color);
+  --titlebar-text-color-focused: var(--adw-headerbar-fg-color);
+}
+%colors%.is-focused .sidebar-toggle-button,
+%colors%.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: var(--titlebar-background-focused);
+  --sidebar-tab-container-background: var(--titlebar-background-focused);
+}
+%colors%.is-focused .workspace-ribbon.mod-primary { --titlebar-background: var(--titlebar-background-focused); }
+%colors%.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+%colors%.is-focused .sidebar-toggle-button {
+  --icon-color: var(--adw-headerbar-fg-color);
+  --icon-color-hover: var(--adw-headerbar-fg-color);
+  --icon-color-focused: var(--adw-headerbar-fg-color);
+  --tab-text-color-focused: var(--adw-headerbar-fg-color);
+  --tab-text-color-focused-active-current: var(--adw-headerbar-fg-color);
+}
+%colors% .titlebar-button.mod-logo:hover { background-color: inherit; }
+%colors% .view-header {
+  background-color: var(--adw-headerbar-bg-color);
+  border-bottom: 1px solid var(--adw-border-color);
+}
+%colors% .view-header-title { color: var(--adw-headerbar-fg-color); }
+%colors%.is-focused .workspace-tabs.mod-top .workspace-tab-header-container,
+%colors%.is-focused .sidebar-toggle-button { --background-modifier-hover: color-mix(in srgb, currentColor 10%, transparent); }

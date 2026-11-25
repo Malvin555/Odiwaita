@@ -1,0 +1,15 @@
+.checkbox-container {
+  background-color: var(--adw-trough);
+  box-shadow: none;
+}
+.checkbox-container:hover { background-color: var(--adw-trough-hover); }
+.checkbox-container:active { background-color: var(--adw-trough-active); }
+.checkbox-container.is-enabled { background-color: var(--adw-accent-bg-color); }
+.checkbox-container.is-enabled:hover { background-color: var(--interactive-accent-hover); }
+.checkbox-container::after { box-shadow: 0 2px 4px rgb(0 0 6 / 20%); }
+.checkbox-container:hover::after,
+.checkbox-container.is-enabled::after { background-color: #fff; }
+.checkbox-container:focus-visible {
+  outline: 2px solid var(--adw-focus-ring);
+  outline-offset: 1px;
+}

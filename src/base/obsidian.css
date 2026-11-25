@@ -1,0 +1,211 @@
+body:is(.theme-light, .theme-dark) {
+  --file-header-justify: center;
+  --file-line-width: 760px;
+  --header-height: 47px;
+  --line-height-normal: 1.6;
+
+  --radius-s: 6px;
+  --radius-m: 9px;
+  --radius-l: 12px;
+  --radius-xl: 15px;
+
+  --input-height: 34px;
+  --input-radius: 9px;
+  --input-padding: 0 9px;
+  --input-border-width: 0px;
+  --input-border-width-focus: 2px;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --button-radius: 9px;
+  --dropdown-background: var(--adw-button-bg);
+  --dropdown-background-hover: var(--adw-button-hover-bg);
+  --dropdown-background-blend-mode: normal;
+  --clickable-icon-radius: 9px;
+  --tab-radius: 9px;
+  --tab-radius-active: 9px;
+
+  --checkbox-radius: 6px;
+  --checkbox-size: 18px;
+  --checkbox-color: var(--adw-accent-bg-color);
+  --checkbox-color-hover: var(--adw-accent-bg-color);
+  --checkbox-border-color: var(--adw-trough-hover);
+  --checkbox-border-color-hover: var(--adw-trough-active);
+  --checkbox-marker-color: var(--adw-accent-fg-color);
+  --checklist-done-decoration: line-through;
+
+  --toggle-border-width: 3px;
+  --toggle-width: 46px;
+  --toggle-radius: 14px;
+  --toggle-thumb-height: 20px;
+  --toggle-thumb-width: 20px;
+  --toggle-thumb-radius: 50%;
+  --toggle-thumb-color: color-mix(in srgb, white 80%, var(--adw-view-bg-color));
+  --toggle-s-border-width: 3px;
+  --toggle-s-width: 46px;
+  --toggle-s-thumb-height: 20px;
+  --toggle-s-thumb-width: 20px;
+
+  --menu-radius: 15px;
+  --menu-padding: 8px;
+  --menu-border-width: 0px;
+  --menu-background: var(--adw-popover-bg-color);
+  --menu-shadow: var(--adw-popover-shadow);
+  --menu-divider-color: var(--adw-border-color);
+  --menu-backdrop-filter: none;
+  --suggestion-background: var(--adw-popover-bg-color);
+  --suggestion-backdrop-filter: none;
+  --prompt-background: var(--adw-dialog-bg-color);
+  --prompt-backdrop-filter: none;
+  --prompt-border-width: 0px;
+  --prompt-border-color: transparent;
+
+  --modal-background: var(--adw-dialog-bg-color);
+  --modal-radius: 15px;
+  --modal-border-width: 0px;
+  --modal-shadow: var(--adw-dialog-shadow);
+
+  --callout-radius: 12px;
+  --callout-border-width: 0px;
+  --callout-padding: 12px 16px;
+  --callout-blend-mode: normal;
+  --callout-title-padding: 0 0 4px 0;
+  --code-radius: 9px;
+  --tag-radius: 99px;
+  --tag-size: 0.82em;
+  --tag-weight: 600;
+  --tag-padding-x: 0.7em;
+  --tag-padding-y: 0.12em;
+  --tag-border-width: 0px;
+  --blockquote-border-thickness: 3px;
+  --blockquote-border-color: var(--adw-accent-bg-color);
+  --blockquote-style: normal;
+  --embed-border-left: 3px solid var(--adw-accent-bg-color);
+  --embed-padding: 0 0 0 16px;
+  --table-border-width: 1px;
+  --table-header-weight: 700;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-decoration-style: dotted;
+  --link-unresolved-decoration-color: var(--adw-accent-color);
+
+  --h1-size: 2em;
+  --h2-size: 1.6em;
+  --h3-size: 1.3em;
+  --h4-size: 1.12em;
+  --h5-size: 1em;
+  --h6-size: 0.92em;
+  --h1-weight: 800;
+  --h2-weight: 700;
+  --h3-weight: 700;
+  --h4-weight: 700;
+  --h5-weight: 700;
+  --h6-weight: 700;
+  --font-monospace-theme: "Adwaita Mono", "Source Code Pro", "JetBrains Mono", "Cascadia Mono", ui-monospace, monospace;
+
+  --metadata-border-width: 0px;
+  --metadata-border-radius: 12px;
+  --metadata-label-font-weight: 600;
+  --metadata-property-radius: 6px;
+
+  --divider-width: 1px;
+  --divider-color: var(--adw-sidebar-border-color);
+  --divider-color-hover: var(--adw-accent-bg-color);
+  --ribbon-background: var(--adw-sidebar-bg-color);
+  --ribbon-background-collapsed: var(--adw-sidebar-bg-color);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--adw-window-fg-color) 30%, transparent);
+  --scrollbar-active-thumb-bg: color-mix(in srgb, var(--adw-window-fg-color) 50%, transparent);
+
+  --background-primary: var(--adw-view-bg-color);
+  --background-primary-alt: color-mix(in srgb, var(--adw-view-fg-color) 4%, var(--adw-view-bg-color));
+  --background-secondary: var(--adw-sidebar-bg-color);
+  --background-secondary-alt: var(--adw-secondary-sidebar-bg-color);
+  --background-modifier-border: var(--adw-border-color);
+  --background-modifier-border-hover: color-mix(in srgb, var(--adw-window-fg-color) 25%, transparent);
+  --background-modifier-border-focus: var(--adw-focus-ring);
+  --background-modifier-form-field: var(--adw-field-bg);
+  --background-modifier-hover: var(--adw-hover-bg);
+  --background-modifier-active-hover: var(--adw-accent-soft);
+  --background-modifier-cover: rgb(0 0 0 / 40%);
+  --background-modifier-error: var(--adw-error-bg-color);
+  --background-modifier-error-hover: color-mix(in srgb, var(--adw-error-bg-color) 85%, black);
+  --background-modifier-success: var(--adw-success-bg-color);
+  --background-modifier-message: var(--adw-toast-bg);
+  --background-modifier-box-shadow: rgb(0 0 0 / 30%);
+
+  --text-normal: var(--adw-window-fg-color);
+  --text-muted: color-mix(in srgb, var(--adw-window-fg-color) 75%, transparent);
+  --text-faint: color-mix(in srgb, var(--adw-window-fg-color) var(--adw-dim-opacity), transparent);
+  --text-on-accent: var(--adw-accent-fg-color);
+  --text-on-accent-inverted: var(--adw-accent-fg-color);
+  --text-accent: var(--adw-accent-color);
+  --text-accent-hover: var(--adw-accent-color);
+  --text-error: var(--adw-error-color);
+  --text-success: var(--adw-success-color);
+  --text-warning: var(--adw-warning-color);
+  --text-selection: color-mix(in srgb, var(--adw-accent-bg-color) 30%, transparent);
+  --interactive-normal: var(--adw-button-bg);
+  --interactive-hover: var(--adw-button-hover-bg);
+  --interactive-accent: var(--adw-accent-bg-color);
+  --interactive-accent-hover: color-mix(in srgb, var(--adw-accent-fg-color) 10%, var(--adw-accent-bg-color));
+  --code-background: color-mix(in srgb, var(--adw-window-fg-color) 6%, transparent);
+  --table-header-background: color-mix(in srgb, var(--adw-window-fg-color) 5%, transparent);
+  --table-border-color: var(--adw-border-color);
+  --shadow-s: 0 1px 3px rgb(0 0 0 / 20%);
+  --shadow-l: var(--adw-dialog-shadow);
+  --graph-line: color-mix(in srgb, var(--adw-window-fg-color) 18%, transparent);
+  --graph-node: color-mix(in srgb, var(--adw-window-fg-color) 55%, transparent);
+  --graph-node-focused: var(--adw-accent-color);
+}
+
+body.theme-dark {
+  --code-normal: #e4e4e8;
+  --text-highlight-bg: rgb(246 211 45 / 30%);
+  --color-red-rgb: 237, 51, 59;
+  --color-orange-rgb: 255, 120, 0;
+  --color-yellow-rgb: 245, 194, 17;
+  --color-green-rgb: 51, 209, 122;
+  --color-cyan-rgb: 51, 178, 204;
+  --color-blue-rgb: 98, 160, 234;
+  --color-purple-rgb: 192, 97, 203;
+  --color-pink-rgb: 220, 138, 221;
+  --color-red: #ed333b;
+  --color-orange: #ff7800;
+  --color-yellow: #f5c211;
+  --color-green: #33d17a;
+  --color-cyan: #33b2cc;
+  --color-blue: #62a0ea;
+  --color-purple: #c061cb;
+  --color-pink: #dc8add;
+}
+
+body.theme-light {
+  --code-normal: #3d3846;
+  --text-highlight-bg: rgb(246 211 45 / 50%);
+  --color-red-rgb: 224, 27, 36;
+  --color-orange-rgb: 230, 97, 0;
+  --color-yellow-rgb: 229, 165, 10;
+  --color-green-rgb: 38, 162, 105;
+  --color-cyan-rgb: 33, 144, 164;
+  --color-blue-rgb: 53, 132, 228;
+  --color-purple-rgb: 145, 65, 172;
+  --color-pink-rgb: 213, 97, 153;
+  --color-red: #e01b24;
+  --color-orange: #e66100;
+  --color-yellow: #e5a50a;
+  --color-green: #26a269;
+  --color-cyan: #2190a4;
+  --color-blue: #3584e4;
+  --color-purple: #9141ac;
+  --color-pink: #d56199;
+}
+
+body:is(.theme-light, .theme-dark) { --checklist-done-color: var(--text-faint); }
+
+body.adw-compact {
+  --input-height: 28px;
+  --nav-item-size: 13px;
+}

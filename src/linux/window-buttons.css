@@ -1,0 +1,101 @@
+%mod% {
+  --adw-hide-min: 0px;
+  --adw-hide-max: 0px;
+  --adw-hide-close: 0px;
+  --frame-right-space: calc(var(--adwaita-mod-scale) * (120px - var(--adw-hide-min) - var(--adw-hide-max) - var(--adw-hide-close)));
+  --wb-bg: color-mix(in srgb, currentColor 10%, transparent);
+  --wb-hover: color-mix(in srgb, currentColor 15%, transparent);
+  --wb-active: color-mix(in srgb, currentColor 30%, transparent);
+}
+%mod%.adwaita-window-button-minimize-hide { --adw-hide-min: 38px; }
+%mod%.adwaita-window-button-maximize-hide { --adw-hide-max: 38px; }
+%mod%.adwaita-window-button-close-hide { --adw-hide-close: 38px; }
+%mod%.adwaita-window-button-minimize-hide .titlebar-button-container.mod-right .titlebar-button.mod-minimize,
+%mod%.adwaita-window-button-maximize-hide .titlebar-button-container.mod-right .titlebar-button.mod-maximize,
+%mod%.adwaita-window-button-close-hide .titlebar-button-container.mod-right .titlebar-button.mod-close { display: none; }
+
+%mod% .titlebar-button-container.mod-right {
+  transform: scale(var(--adwaita-mod-scale));
+  margin-right: var(--adwaita-mod-right-margin);
+  transform-origin: right;
+}
+%mod% .titlebar-button-container.mod-right .titlebar-button {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  padding: 0;
+  margin: auto 0 auto 14px;
+  background: var(--wb-bg);
+  color: var(--adw-headerbar-fg-color);
+}
+%mod% .titlebar-button-container.mod-right .titlebar-button svg { display: none; }
+%mod% .titlebar-button-container.mod-right .titlebar-button::after {
+  content: '';
+  background-color: currentColor;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+}
+%mod% .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after { -webkit-mask-image: var(--adw-icon-window-minimize-symbolic); mask-image: var(--adw-icon-window-minimize-symbolic); }
+%mod% .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after { -webkit-mask-image: var(--adw-icon-window-maximize-symbolic); mask-image: var(--adw-icon-window-maximize-symbolic); }
+%mod% .titlebar-button-container.mod-right .titlebar-button.mod-close::after { -webkit-mask-image: var(--adw-icon-window-close-symbolic); mask-image: var(--adw-icon-window-close-symbolic); }
+%mod% .titlebar-button-container.mod-right .titlebar-button:hover { background: var(--wb-hover); }
+%mod%.is-focused .titlebar-button-container.mod-right .titlebar-button,
+%mod%.is-focused .modal-close-button,
+%mod%.is-focused .modal-header-button {
+  background: var(--wb-bg);
+  color: var(--adw-headerbar-fg-color);
+}
+%mod%.is-focused .titlebar-button-container.mod-right .titlebar-button:hover,
+%mod%.is-focused .modal-close-button:hover,
+%mod%.is-focused .modal-header-button:hover { background: var(--wb-hover); }
+%mod%.is-focused .titlebar-button-container.mod-right .titlebar-button:active,
+%mod%.is-focused .modal-close-button:active,
+%mod%.is-focused .modal-header-button:active { background: var(--wb-active); }
+
+%mod% .modal-close-button {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  color: var(--adw-headerbar-fg-color);
+  background: var(--wb-bg);
+  transform: scale(var(--adwaita-mod-scale));
+  transform-origin: right;
+}
+%mod% .modal-close-button:before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  -webkit-mask-image: var(--adw-icon-window-close-symbolic);
+  mask-image: var(--adw-icon-window-close-symbolic);
+  background-color: currentColor;
+}
+%mod% .modal-header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 12px;
+  opacity: 1;
+  color: var(--adw-headerbar-fg-color);
+  background: var(--wb-bg);
+  transform: scale(var(--adwaita-mod-scale));
+  transform-origin: right;
+}
+%mod% .modal-header-button svg { display: none; }
+%mod% .modal-header-button::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask-image: var(--adw-icon-window-close-symbolic);
+  mask-image: var(--adw-icon-window-close-symbolic);
+  background-color: currentColor;
+}

@@ -1,0 +1,48 @@
+.notice:has(main.toast) {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 14px;
+  min-width: 300px;
+  max-width: 440px;
+}
+main.toast {
+  background-color: var(--adw-dialog-bg-color) !important;
+  color: var(--text-normal);
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: var(--adw-dialog-shadow) !important;
+  padding: 14px 16px !important;
+}
+.reminder-title { font-weight: 600; overflow-wrap: anywhere; line-height: 1.35; }
+main.toast .reminder-title { margin: 0 2.25rem 0.5rem 0 !important; }
+button.reminder-file, button.reminder-footer-action {
+  background: transparent !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  font-weight: 400 !important;
+  color: var(--text-muted);
+  text-align: left;
+}
+button.reminder-file:hover, button.reminder-footer-action:hover { color: var(--text-normal); }
+.reminder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px !important;
+  margin-top: 12px;
+}
+.reminder-actions button, .reminder-actions select {
+  min-height: var(--input-height) !important;
+  height: var(--input-height);
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.reminder-actions button { padding-left: 14px !important; padding-right: 14px !important; }
+.reminder-actions .icon-text { display: inline-flex; align-items: center; gap: 6px; width: auto; }
+.reminder-actions .icon-text svg { width: 16px; height: 16px; }
+.reminder-actions select { flex: 1 1 auto; min-width: 110px; }
+.reminder-secondary-actions { gap: 12px; }
+.reminder-date-chooser-modal .modal-content { display: flex; flex-direction: column; gap: 10px; }

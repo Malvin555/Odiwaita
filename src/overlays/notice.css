@@ -1,0 +1,16 @@
+.notice {
+  padding: 10px 20px;
+  border-radius: 99px;
+  background-color: var(--adw-toast-bg);
+  color: #fff;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 35%);
+}
+.notice:has(button, select, input) {
+  min-width: 280px;
+  max-width: 440px;
+  padding: 14px 16px;
+  border-radius: 15px;
+  background-color: var(--adw-dialog-bg-color);
+  color: var(--text-normal);
+  box-shadow: var(--adw-dialog-shadow);
+}

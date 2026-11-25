@@ -1,0 +1,32 @@
+button:where(:not(.clickable-icon)) {
+  padding-inline: 14px;
+  font-weight: 700;
+}
+button:where(:not(.clickable-icon)):active { background-color: var(--adw-button-active-bg); }
+button.mod-cta:active { background-color: color-mix(in srgb, black 20%, var(--adw-accent-bg-color)); }
+button.mod-warning { background-color: var(--adw-destructive-bg-color); color: var(--adw-destructive-fg-color); }
+button.mod-warning:hover { background-color: color-mix(in srgb, var(--adw-destructive-fg-color) 10%, var(--adw-destructive-bg-color)); }
+
+button:focus-visible,
+.clickable-icon:focus-visible,
+.tree-item-self:focus-visible {
+  outline: 2px solid var(--adw-focus-ring);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+input:not([type]),
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"],
+textarea,
+select,
+.dropdown { border-radius: var(--input-radius); }
+.dropdown, select { font-weight: 600; }
+.search-input-container input { border-radius: 99px; }
+.clickable-icon, .nav-action-button { border-radius: var(--clickable-icon-radius); }

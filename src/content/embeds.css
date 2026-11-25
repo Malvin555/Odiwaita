@@ -1,0 +1,30 @@
+.metadata-container .metadata-add-button:hover { background-color: color-mix(in srgb, var(--text-normal) 7%, transparent); color: var(--text-normal); }
+.metadata-container .metadata-add-button svg { width: 16px; height: 16px; }
+
+.markdown-embed { border-radius: 0 8px 8px 0; }
+.internal-embed.bases-embed, .bases-embed, .internal-embed[src$=".base"] {
+  border: none;
+  border-radius: 12px;
+  background-color: var(--adw-card-bg-color);
+  box-shadow: 0 0 0 1px var(--adw-border-color);
+  padding: 4px;
+  overflow: hidden;
+}
+.bases-cards-item, .bases-cards-container .bases-cards-item {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--adw-border-color);
+  background-color: var(--adw-card-bg-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block,
+.markdown-source-view.mod-cm6 .cm-embed-block:is(:hover, :focus, :focus-visible, :focus-within) {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.markdown-source-view.mod-cm6 .edit-block-button {
+  border-radius: 6px;
+  box-shadow: none;
+  background-color: var(--adw-button-bg);
+}
+.markdown-source-view.mod-cm6 .edit-block-button:hover { background-color: var(--adw-button-hover-bg); }

@@ -1,0 +1,88 @@
+body {
+  --adw-accent-bg-color: #3584e4;
+  --adw-accent-fg-color: #ffffff;
+  --adw-accent-color: oklab(from var(--adw-accent-bg-color) var(--adw-standalone-oklab));
+  --adw-destructive-color: oklab(from var(--adw-destructive-bg-color) var(--adw-standalone-oklab));
+  --adw-success-color: oklab(from var(--adw-success-bg-color) var(--adw-standalone-oklab));
+  --adw-warning-color: oklab(from var(--adw-warning-bg-color) var(--adw-standalone-oklab));
+  --adw-error-color: oklab(from var(--adw-error-bg-color) var(--adw-standalone-oklab));
+
+  --adw-destructive-fg-color: #ffffff;
+  --adw-success-fg-color: #ffffff;
+  --adw-error-fg-color: #ffffff;
+
+  --adw-button-bg: color-mix(in srgb, var(--adw-window-fg-color) 10%, transparent);
+  --adw-button-hover-bg: color-mix(in srgb, var(--adw-window-fg-color) 15%, transparent);
+  --adw-button-active-bg: color-mix(in srgb, var(--adw-window-fg-color) 30%, transparent);
+  --adw-field-bg: var(--adw-button-bg);
+  --adw-hover-bg: color-mix(in srgb, var(--adw-window-fg-color) 7%, transparent);
+  --adw-selected-bg: color-mix(in srgb, var(--adw-window-fg-color) 10%, transparent);
+  --adw-selected-hover-bg: color-mix(in srgb, var(--adw-window-fg-color) 13%, transparent);
+  --adw-trough: color-mix(in srgb, var(--adw-window-fg-color) 15%, transparent);
+  --adw-trough-hover: color-mix(in srgb, var(--adw-window-fg-color) 20%, transparent);
+  --adw-trough-active: color-mix(in srgb, var(--adw-window-fg-color) 25%, transparent);
+  --adw-accent-soft: color-mix(in srgb, var(--adw-accent-bg-color) 16%, transparent);
+  --adw-accent-soft-hover: color-mix(in srgb, var(--adw-accent-bg-color) 26%, transparent);
+  --adw-focus-ring: color-mix(in srgb, var(--adw-accent-color) 50%, transparent);
+  --adw-dim-opacity: 55%;
+
+  --adw-card-shadow: 0 0 0 1px rgb(0 0 6 / 3%), 0 1px 3px 1px rgb(0 0 6 / 7%), 0 2px 6px 2px rgb(0 0 6 / 3%);
+  --adw-toast-bg: #505053;
+  --adw-osd-bg: rgb(0 0 0 / 70%);
+}
+
+body.theme-light {
+  --adw-standalone-oklab: min(l, 0.5) a b;
+  --adw-destructive-bg-color: #e01b24;
+  --adw-success-bg-color: #2ec27e;
+  --adw-warning-bg-color: #e5a50a;
+  --adw-warning-fg-color: rgb(0 0 0 / 80%);
+  --adw-error-bg-color: #e01b24;
+  --adw-window-bg-color: #fafafb;
+  --adw-window-fg-color: rgb(0 0 6 / 80%);
+  --adw-view-bg-color: #ffffff;
+  --adw-view-fg-color: rgb(0 0 6 / 80%);
+  --adw-headerbar-bg-color: #ffffff;
+  --adw-headerbar-fg-color: rgb(0 0 6 / 80%);
+  --adw-headerbar-backdrop-color: #fafafb;
+  --adw-headerbar-shade-color: rgb(0 0 6 / 12%);
+  --adw-sidebar-bg-color: #ebebed;
+  --adw-sidebar-backdrop-color: #f2f2f4;
+  --adw-sidebar-border-color: rgb(0 0 6 / 7%);
+  --adw-secondary-sidebar-bg-color: #f3f3f5;
+  --adw-card-bg-color: #ffffff;
+  --adw-dialog-bg-color: #fafafb;
+  --adw-popover-bg-color: #ffffff;
+  --adw-border-color: rgb(0 0 6 / 15%);
+  --adw-fg-rgb: 0, 0, 6;
+  --adw-popover-shadow: 0 0 0 1px rgb(0 0 0 / 5%), 0 1px 5px 1px rgb(0 0 0 / 9%), 0 2px 14px 3px rgb(0 0 0 / 5%);
+  --adw-dialog-shadow: 0 0 0 1px rgb(0 0 0 / 6%), 0 4px 12px rgb(0 0 0 / 12%), 0 12px 40px rgb(0 0 0 / 18%);
+}
+
+body.theme-dark {
+  --adw-standalone-oklab: max(l, 0.85) a b;
+  --adw-destructive-bg-color: #c01c28;
+  --adw-success-bg-color: #26a269;
+  --adw-warning-bg-color: #cd9309;
+  --adw-warning-fg-color: rgb(0 0 0 / 80%);
+  --adw-error-bg-color: #c01c28;
+  --adw-window-bg-color: #222226;
+  --adw-window-fg-color: #ffffff;
+  --adw-view-bg-color: #1d1d20;
+  --adw-view-fg-color: #ffffff;
+  --adw-headerbar-bg-color: #2e2e32;
+  --adw-headerbar-fg-color: #ffffff;
+  --adw-headerbar-backdrop-color: #222226;
+  --adw-headerbar-shade-color: rgb(0 0 6 / 36%);
+  --adw-sidebar-bg-color: #2e2e32;
+  --adw-sidebar-backdrop-color: #28282c;
+  --adw-sidebar-border-color: rgb(0 0 6 / 36%);
+  --adw-secondary-sidebar-bg-color: #28282c;
+  --adw-card-bg-color: rgb(255 255 255 / 8%);
+  --adw-dialog-bg-color: #36363a;
+  --adw-popover-bg-color: #36363a;
+  --adw-border-color: rgb(255 255 255 / 15%);
+  --adw-fg-rgb: 255, 255, 255;
+  --adw-popover-shadow: 0 0 0 1px rgb(0 0 0 / 25%), 0 1px 5px 1px rgb(0 0 0 / 25%), 0 2px 14px 3px rgb(0 0 0 / 25%);
+  --adw-dialog-shadow: 0 0 0 1px rgb(255 255 255 / 6%), 0 4px 12px rgb(0 0 0 / 30%), 0 12px 40px rgb(0 0 0 / 45%);
+}

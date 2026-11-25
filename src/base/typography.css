@@ -1,0 +1,16 @@
+%font% {
+  --font-interface-theme: "Adwaita Sans", Cantarell, Inter, system-ui, sans-serif;
+  --font-text-theme: "Adwaita Sans", Cantarell, Inter, system-ui, sans-serif;
+  --font-ui-small: 14px;
+  --font-ui-medium: 15px;
+  --h1-weight: 900;
+}
+
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 { letter-spacing: -0.01em; }
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 { color: var(--text-muted); }
+.markdown-rendered strong { font-weight: 700; }
+.markdown-rendered hr { border-top: 1px solid var(--adw-border-color); border-bottom: none; }
+.markdown-rendered mark, .cm-highlight { border-radius: 3px; padding: 0 2px; }
+.markdown-rendered a.external-link { background-image: none; padding-right: 0; }
