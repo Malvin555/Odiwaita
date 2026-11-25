@@ -9,17 +9,28 @@
 .callout[data-callout="launcher"] > .callout-title { display: none; }
 .callout[data-callout="launcher"] > .callout-content { padding: 0; margin: 0; }
 .callout[data-callout="launcher"] table {
+  --launcher-bg: color-mix(in srgb, var(--text-normal) 6%, var(--background-primary));
+  --table-header-background: var(--launcher-bg);
+  --table-row-background: var(--launcher-bg);
+  --table-row-alt-background: var(--launcher-bg);
+  --table-column-alt-background: var(--launcher-bg);
   width: 100%; table-layout: fixed; border: none; border-radius: 0;
   border-collapse: separate; border-spacing: 10px 0; margin: 0 0 12px -10px; overflow: visible;
 }
-.callout[data-callout="launcher"] th,
-.callout[data-callout="launcher"] td {
-  border: none; background: color-mix(in srgb, var(--text-normal) 6%, transparent);
+.callout[data-callout="launcher"] :is(thead, tbody, tr) { background: transparent; }
+.callout[data-callout="launcher"] :is(th, td) {
+  border: none; background: var(--launcher-bg);
   text-align: left; vertical-align: top;
 }
+.callout[data-callout="launcher"] tr:hover :is(th, td) { background: var(--launcher-bg); }
 .callout[data-callout="launcher"] th { border-radius: 14px 14px 0 0; padding: 16px 16px 2px; font-size: 1.1em; }
 .callout[data-callout="launcher"] td { border-radius: 0 0 14px 14px; padding: 0 16px 16px; color: var(--text-muted); font-size: 0.9em; }
 .callout[data-callout="launcher"] th a { color: var(--text-accent); font-weight: 700; }
+.callout[data-callout="launcher"] thead { display: none; }
+.callout[data-callout="launcher"] td br { display: none; }
+.callout[data-callout="launcher"] td { border-radius: 14px; padding: 16px; line-height: 1.45; }
+.callout[data-callout="launcher"] td strong { display: block; margin-bottom: 2px; font-size: 1.1em; color: var(--text-normal); }
+.callout[data-callout="launcher"] td strong a { color: var(--text-accent); }
 
 /* custom callouts */
 .callout[data-callout="reminder"] { --callout-color: var(--color-orange-rgb); --callout-icon: lucide-bell; }

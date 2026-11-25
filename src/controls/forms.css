@@ -28,5 +28,16 @@ textarea,
 select,
 .dropdown { border-radius: var(--input-radius); }
 .dropdown, select { font-weight: 600; }
-.search-input-container input { border-radius: 99px; }
+input:not([type="checkbox"], [type="radio"], [type="range"]):hover { background-color: var(--adw-button-hover-bg); }
+input:not([type="checkbox"], [type="radio"], [type="range"]):focus,
+input:not([type="checkbox"], [type="radio"], [type="range"]):focus-visible,
+textarea:focus,
+select:focus {
+  background-color: var(--adw-field-bg);
+  border-color: transparent;
+  box-shadow: none;
+  outline: 2px solid var(--adw-accent-color);
+  outline-offset: -2px;
+}
+.search-input-container input { border-radius: var(--input-radius); }
 .clickable-icon, .nav-action-button { border-radius: var(--clickable-icon-radius); }

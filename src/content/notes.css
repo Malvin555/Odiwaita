@@ -26,9 +26,29 @@
   padding: 8px 16px;
 }
 
-.markdown-rendered table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--table-border-color); border-radius: 10px; overflow: hidden; }
-.markdown-rendered th, .markdown-rendered td { border: none; border-bottom: 1px solid var(--table-border-color); border-right: 1px solid var(--table-border-color); padding: 6px 12px; }
-.markdown-rendered th:last-child, .markdown-rendered td:last-child { border-right: none; }
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--adw-border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.markdown-rendered th,
+.markdown-rendered td {
+  padding: 7px 12px;
+  border: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--text-normal) 9%, transparent);
+}
+.markdown-rendered thead { --table-column-alt-background: color-mix(in srgb, var(--text-normal) 5%, transparent); }
+.markdown-rendered th {
+  padding-block: 6px;
+  border-bottom-color: var(--adw-border-color);
+  background-color: color-mix(in srgb, var(--text-normal) 5%, transparent);
+  color: var(--text-muted);
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.3;
+}
 .markdown-rendered tr:last-child td { border-bottom: none; }
 
 a.tag, .cm-s-obsidian span.cm-hashtag {

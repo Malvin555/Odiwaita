@@ -6,10 +6,17 @@ body:is(.theme-light, .theme-dark) {
 body.adw-compact { --adw-prop-h: 30px; }
 .metadata-container {
   background-color: var(--adw-card-bg-color);
+  border: none;
   border-radius: 12px;
   box-shadow: 0 0 0 1px var(--adw-border-color);
-  padding: 6px;
-  margin-bottom: 1.2em;
+  padding: 4px 8px;
+  margin-bottom: 1em;
+}
+body.adw-properties-flat .metadata-container {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
 }
 .workspace-leaf-content[data-type="file-properties"] .metadata-container,
 .workspace-leaf-content[data-type="all-properties"] .metadata-container {
@@ -35,16 +42,23 @@ body.adw-compact { --adw-prop-h: 30px; }
   align-items: center;
   gap: 6px;
   min-height: var(--adw-prop-h);
-  padding: 0 8px;
+  margin: 0;
+  padding: 0 4px;
   font-weight: 700;
-  border-radius: 8px;
 }
-.metadata-container .metadata-properties-heading:hover { background-color: color-mix(in srgb, var(--text-normal) 5%, transparent); }
+.metadata-container .metadata-properties-heading::before { display: none; }
+.metadata-container .metadata-properties-heading .collapse-indicator {
+  position: static;
+  inset: auto;
+  padding: 0;
+  margin-left: -2px;
+}
+.metadata-container:not(.is-collapsed) .metadata-properties-heading { margin-bottom: 2px; }
 .metadata-container .metadata-properties {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding: 2px 0;
+  padding: 0;
 }
 .metadata-container .metadata-property {
   display: flex;

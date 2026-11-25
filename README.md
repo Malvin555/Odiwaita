@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./docs/obsiwaita-icon.png" alt="Logo" width="64">
+<img src="./docs/obsiwaita-icon.png" alt="Logo" width="82">
 </p>
 
 # Obsiwaita
@@ -8,7 +8,7 @@ A GTK4 / libadwaita theme for Obsidian. Colors, radii, switches, menus and windo
 
 ![Preview](docs/preview.png)
 
-Based on [birneee/obsidian-adwaita](https://github.com/birneee/obsidian-adwaita), with an improved theme, reworked into a modular source tree with a dedicated build step.
+Based on [birneee/obsidian-adwaita-theme](https://github.com/birneee/obsidian-adwaita-theme), with an improved theme, reworked into a modular source tree with a dedicated build step.
 
 ## Preview
 
@@ -22,7 +22,7 @@ GNOME accent colors:
 
 ## Installation
 
-Download the latest release from the [Releases page](https://github.com/Malvin555/Obsiwaita), then extract the theme files into your Obsidian vault.
+Download the latest release from the [Releases page](https://github.com/Malvin555/Obsiwaita/releases), then extract the theme files into your Obsidian vault.
 
 After extracting, enable **Obsiwaita** from **Settings → Appearance → Themes**.
 

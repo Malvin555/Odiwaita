@@ -11,10 +11,19 @@
   align-items: center;
   flex: 1 1 auto;
   min-width: 0;
+  height: var(--input-height);
+  border-radius: var(--input-radius);
+  background-color: var(--adw-field-bg);
+}
+.plugin-tasks-toolbar label:hover { background-color: var(--adw-button-hover-bg); }
+.plugin-tasks-toolbar label:focus-within {
+  background-color: var(--adw-field-bg);
+  outline: 2px solid var(--adw-accent-color);
+  outline-offset: -2px;
 }
 .plugin-tasks-toolbar label svg {
   position: absolute;
-  left: 11px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   width: 16px;
@@ -22,12 +31,20 @@
   color: var(--text-faint);
   pointer-events: none;
 }
-.plugin-tasks-toolbar label input {
+.plugin-tasks-toolbar label:focus-within svg { color: var(--adw-accent-color); }
+.plugin-tasks-toolbar label input,
+.plugin-tasks-toolbar label input:hover,
+.plugin-tasks-toolbar label input:focus,
+.plugin-tasks-toolbar label input:focus-visible {
   box-sizing: border-box;
   width: 100%;
-  height: var(--input-height);
-  padding: 0 12px 0 36px;
-  border-radius: 99px;
+  height: 100%;
+  padding: 0 12px 0 34px;
+  border: none;
+  border-radius: inherit;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
 }
 .plugin-tasks-toolbar button {
   display: inline-flex !important;
@@ -38,6 +55,6 @@
   min-height: var(--input-height) !important;
   height: var(--input-height);
   padding: 0 !important;
-  border-radius: 50% !important;
+  border-radius: var(--button-radius) !important;
 }
 .plugin-tasks-toolbar button svg { width: 16px; height: 16px; }

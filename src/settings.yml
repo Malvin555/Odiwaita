@@ -47,6 +47,11 @@ settings:
         description: Smaller buttons, inputs and sidebar rows
         type: class-toggle
     -
+        id: adw-properties-flat
+        title: Flat properties
+        description: Remove the card background behind the properties in notes
+        type: class-toggle
+    -
         id: file-line-width
         title: Reading width
         description: Maximum width of note text

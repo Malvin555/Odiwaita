@@ -4,12 +4,26 @@
 .markdown-embed { border-radius: 0 8px 8px 0; }
 .internal-embed.bases-embed, .bases-embed, .internal-embed[src$=".base"] {
   border: none;
-  border-radius: 12px;
-  background-color: var(--adw-card-bg-color);
-  box-shadow: 0 0 0 1px var(--adw-border-color);
-  padding: 4px;
-  overflow: hidden;
+  background: transparent;
+  padding: 0;
 }
+.workspace-leaf-content[data-type="markdown"] .bases-embed .bases-view,
+.bases-embed .bases-view {
+  --bases-embed-border-radius: 12px;
+  --bases-embed-border-width: 1px;
+  --bases-embed-border-color: var(--adw-border-color);
+  border: 1px solid var(--adw-border-color);
+  border-radius: 12px;
+  overflow: auto;
+}
+.bases-table-container { --bases-table-row-height: 34px; }
+.bases-table-header { background-color: color-mix(in srgb, var(--text-normal) 5%, transparent); }
+.bases-table-header-label { font-weight: 700; color: var(--text-muted); font-size: 0.85em; }
+.bases-table-cell { box-sizing: border-box; padding-inline: 8px; }
+.bases-table-header-name { padding-inline-start: 8px; }
+.bases-table-header-label { gap: 6px; }
+.bases-toolbar { padding-block: 4px; }
+.bases-toolbar .text-icon-button { border-radius: 6px; padding-inline: 8px; }
 .bases-cards-item, .bases-cards-container .bases-cards-item {
   border-radius: 12px;
   box-shadow: 0 0 0 1px var(--adw-border-color);
