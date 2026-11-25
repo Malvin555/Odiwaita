@@ -42,11 +42,11 @@ jobs:
 
       - name: Package
         run: |
-          name="Obsiwaita-${TAG#v}"
-          mkdir -p release/theme/Obsiwaita release/snippets
-          cp dist/theme.css dist/manifest.json release/theme/Obsiwaita/
+          name="Odiwaita-${TAG#v}"
+          mkdir -p release/theme/Odiwaita release/snippets
+          cp dist/theme.css dist/manifest.json release/theme/Odiwaita/
           cp dist/snippets/*.css release/snippets/
-          (cd release/theme && zip -r "../$name.zip" Obsiwaita)
+          (cd release/theme && zip -r "../$name.zip" Odiwaita)
           (cd release && zip -r "$name-snippets.zip" snippets)
 
       - uses: softprops/action-gh-release@v2
@@ -54,4 +54,4 @@ jobs:
           tag_name: ${{ env.TAG }}
           generate_release_notes: true
           files: |
-            release/Obsiwaita-*.zip
+            release/Odiwaita-*.zip

@@ -1,8 +1,8 @@
 <p align="center">
-<img src="./docs/obsiwaita-icon.png" alt="Logo" width="82">
+<img src="./docs/odiwaita-icon.png" alt="Logo" width="82">
 </p>
 
-# Obsiwaita
+# Odiwaita
 
 A GTK4 / libadwaita theme for Obsidian. Colors, radii, switches, menus and window controls follow libadwaita 1.6+.
 
@@ -22,9 +22,9 @@ GNOME accent colors:
 
 ## Installation
 
-Download the latest release from the [Releases page](https://github.com/Malvin555/Obsiwaita/releases), then extract the theme files into your Obsidian vault.
+Download the latest release from the [Releases page](https://github.com/Malvin555/Odiwaita/releases), then extract the theme files into your Obsidian vault.
 
-After extracting, enable **Obsiwaita** from **Settings → Appearance → Themes**.
+After extracting, enable **Odiwaita** from **Settings → Appearance → Themes**.
 
 ## Manual Install
 
@@ -33,11 +33,11 @@ Build, then copy the output into your vault:
 ```sh
 npm install
 npm run build
-mkdir -p <vault>/.obsidian/themes/Obsiwaita
-cp dist/theme.css dist/manifest.json <vault>/.obsidian/themes/Obsiwaita/
+mkdir -p <vault>/.obsidian/themes/Odiwaita
+cp dist/theme.css dist/manifest.json <vault>/.obsidian/themes/Odiwaita/
 ```
 
-Then pick **Obsiwaita** under Settings, Appearance, Themes.
+Then pick **Odiwaita** under Settings, Appearance, Themes.
 
 `dist/snippets/` holds two optional CSS snippets: `explorer-icons.css` (folder and file icons in the explorer) and `vault-layout.css` (page layout classes used by the companion vault). Copy them to `<vault>/.obsidian/snippets/` and enable them in Appearance.
 
