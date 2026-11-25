@@ -1,6 +1,6 @@
 {
   "name": "obsiwaita",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "GTK4 / libadwaita theme for Obsidian",
   "type": "module",
   "private": true,
