@@ -1,5 +1,5 @@
 const sections = [
-  ['Notes', 'note', 'var(--color-blue)'], ['Journal', 'calendar', 'var(--color-purple)'],
+  ['Notes', 'note', 'var(--color-blue)'], ['Journal', 'calendar', 'var(--color-purple)'], ['Diary', 'edit', 'var(--color-pink)'],
   ['Planner', 'list', 'var(--color-green)'], ['Reminders', 'alarm', 'var(--color-orange)'],
   ['Important', 'important', 'var(--color-red)'], ['Self', 'person', 'var(--color-cyan)'],
   ['Private', 'lock', 'var(--color-yellow)'], ['System', 'settings', 'var(--text-faint)'],
